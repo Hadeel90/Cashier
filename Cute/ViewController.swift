@@ -9,10 +9,13 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
+    
+    //outlets and variables
+    @IBOutlet weak var AdminUsernameField: NSTextField!
+    @IBOutlet weak var AdminPasswordField: NSSecureTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +24,11 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
+    
+    //actions and methods
+    @IBAction func NewReceiptButton(_ sender: NSButton) {
+        performSegue(withIdentifier: "NewReceiptSegue", sender: self)
+    }
 
 }
 
