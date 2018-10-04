@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F7391F62166934F00BCC0B7 /* AdminData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F7391F42166934F00BCC0B7 /* AdminData.xcdatamodeld */; };
 		5F798A67215EA6C200EA4B37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F798A66215EA6C200EA4B37 /* AppDelegate.swift */; };
 		5F798A69215EA6C200EA4B37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F798A68215EA6C200EA4B37 /* ViewController.swift */; };
 		5F798A6B215EA6C400EA4B37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F798A6A215EA6C400EA4B37 /* Assets.xcassets */; };
 		5F798A6E215EA6C400EA4B37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F798A6C215EA6C400EA4B37 /* Main.storyboard */; };
 		5F798A7A215EA6C400EA4B37 /* CuteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F798A79215EA6C400EA4B37 /* CuteTests.swift */; };
 		5F798A85215EA6C500EA4B37 /* CuteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F798A84215EA6C500EA4B37 /* CuteUITests.swift */; };
+		5F798A93216003DC00EA4B37 /* NewReceiptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F798A92216003DC00EA4B37 /* NewReceiptController.swift */; };
+		5F798A972163CB7D00EA4B37 /* EditNewReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F798A962163CB7D00EA4B37 /* EditNewReceiptViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F7391F52166934F00BCC0B7 /* AdminData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AdminData.xcdatamodel; sourceTree = "<group>"; };
 		5F798A63215EA6C200EA4B37 /* Cute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F798A66215EA6C200EA4B37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F798A68215EA6C200EA4B37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +50,8 @@
 		5F798A80215EA6C400EA4B37 /* CuteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F798A84215EA6C500EA4B37 /* CuteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteUITests.swift; sourceTree = "<group>"; };
 		5F798A86215EA6C500EA4B37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F798A92216003DC00EA4B37 /* NewReceiptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReceiptController.swift; sourceTree = "<group>"; };
+		5F798A962163CB7D00EA4B37 /* EditNewReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNewReceiptViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,12 +102,15 @@
 		5F798A65215EA6C200EA4B37 /* Cute */ = {
 			isa = PBXGroup;
 			children = (
+				5F798A92216003DC00EA4B37 /* NewReceiptController.swift */,
 				5F798A66215EA6C200EA4B37 /* AppDelegate.swift */,
 				5F798A68215EA6C200EA4B37 /* ViewController.swift */,
 				5F798A6A215EA6C400EA4B37 /* Assets.xcassets */,
 				5F798A6C215EA6C400EA4B37 /* Main.storyboard */,
 				5F798A6F215EA6C400EA4B37 /* Info.plist */,
 				5F798A70215EA6C400EA4B37 /* Cute.entitlements */,
+				5F798A962163CB7D00EA4B37 /* EditNewReceiptViewController.swift */,
+				5F7391F42166934F00BCC0B7 /* AdminData.xcdatamodeld */,
 			);
 			path = Cute;
 			sourceTree = "<group>";
@@ -254,8 +263,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F798A972163CB7D00EA4B37 /* EditNewReceiptViewController.swift in Sources */,
 				5F798A69215EA6C200EA4B37 /* ViewController.swift in Sources */,
 				5F798A67215EA6C200EA4B37 /* AppDelegate.swift in Sources */,
+				5F7391F62166934F00BCC0B7 /* AdminData.xcdatamodeld in Sources */,
+				5F798A93216003DC00EA4B37 /* NewReceiptController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +583,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5F7391F42166934F00BCC0B7 /* AdminData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5F7391F52166934F00BCC0B7 /* AdminData.xcdatamodel */,
+			);
+			currentVersion = 5F7391F52166934F00BCC0B7 /* AdminData.xcdatamodel */;
+			path = AdminData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5F798A5B215EA6C200EA4B37 /* Project object */;
 }

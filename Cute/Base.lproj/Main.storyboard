@@ -857,7 +857,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="188" id="sex-rU-XpO"/>
                                                     </constraints>
-                                                    <buttonCell key="cell" type="push" title="New Receipt" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="peL-6G-azR">
+                                                    <buttonCell key="cell" type="push" title="New Receipt" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="peL-6G-azR">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                         <font key="font" metaFont="system"/>
                                                     </buttonCell>
@@ -874,6 +874,9 @@
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                         <font key="font" metaFont="system"/>
                                                     </buttonCell>
+                                                    <connections>
+                                                        <action selector="ModifyDataButton:" target="XfG-lQ-9wD" id="oJz-ph-g96"/>
+                                                    </connections>
                                                 </button>
                                                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GA4-fC-Nzq">
                                                     <rect key="frame" x="253" y="113" width="212" height="32"/>
@@ -884,6 +887,9 @@
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                         <font key="font" metaFont="system"/>
                                                     </buttonCell>
+                                                    <connections>
+                                                        <action selector="EmployeesServicesButton:" target="XfG-lQ-9wD" id="U2q-Tp-g7v"/>
+                                                    </connections>
                                                 </button>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vd7-fr-Z8e">
                                                     <rect key="frame" x="17" y="188" width="87" height="17"/>
@@ -902,6 +908,9 @@
 DQ
 </string>
                                                     </buttonCell>
+                                                    <connections>
+                                                        <action selector="AdminSigninButton:" target="XfG-lQ-9wD" id="HHT-zn-puv"/>
+                                                    </connections>
                                                 </button>
                                                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Eko-fr-Kov">
                                                     <rect key="frame" x="17" y="152" width="200" height="22"/>
@@ -946,6 +955,9 @@ DQ
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                         <font key="font" metaFont="system"/>
                                                     </buttonCell>
+                                                    <connections>
+                                                        <action selector="DetailedStoreStatsButton:" target="XfG-lQ-9wD" id="GbF-e9-OXA"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -990,9 +1002,13 @@ DQ
                     <connections>
                         <outlet property="AdminPasswordField" destination="NIm-Oz-JON" id="mIB-ek-Zt8"/>
                         <outlet property="AdminUsernameField" destination="Eko-fr-Kov" id="KCa-6M-k91"/>
+                        <outlet property="DetailedStoreStatsButtonOutlet" destination="jpI-Hn-Qdg" id="rO1-5L-xtD"/>
+                        <outlet property="EmployeesServicesButtonOutlet" destination="GA4-fC-Nzq" id="OUi-2F-hvd"/>
+                        <outlet property="ModifyDataButtonOutlet" destination="Tdk-lx-DYM" id="oeL-Ly-BYb"/>
+                        <outlet property="NewReceiptButtonOutlet" destination="iDa-HC-7AF" id="i0m-ux-WMl"/>
                         <segue destination="pTn-DV-bFr" kind="show" identifier="NewReceiptSegue" id="fBZ-kT-6Wz"/>
-                        <segue destination="4AY-9C-GFg" kind="show" identifier="ModifyDataSegue" id="Qkq-jF-RC9"/>
-                        <segue destination="zdn-fq-2g9" kind="show" identifier="EmployeesServicesSegue" id="6Rs-23-wRw"/>
+                        <segue destination="4AY-9C-GFg" kind="modal" identifier="ModifyDataSegue" id="Qkq-jF-RC9"/>
+                        <segue destination="zdn-fq-2g9" kind="modal" identifier="EmployeesServicesSegue" id="6Rs-23-wRw"/>
                         <segue destination="sA2-rf-64l" kind="sheet" identifier="EmployeeAccessSegue" id="yvY-gV-6LK"/>
                         <segue destination="Hgq-0N-q8X" kind="show" identifier="ReturnInvoiceSegue" id="caO-tI-y2Q"/>
                     </connections>
@@ -1004,7 +1020,7 @@ DQ
         <!--New Receipt-->
         <scene sceneID="jfC-RT-LEZ">
             <objects>
-                <windowController id="pTn-DV-bFr" userLabel="New Receipt" customClass="NewReceiptWindowController" sceneMemberID="viewController">
+                <windowController id="pTn-DV-bFr" userLabel="New Receipt" customClass="NewReceiptWindowController" customModule="Cute" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="New Receipt" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="WdD-el-31u">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -1025,7 +1041,7 @@ DQ
         <!--New Receipt-->
         <scene sceneID="EFp-Pf-ReL">
             <objects>
-                <viewController title="New Receipt" id="qKZ-cK-ubm" customClass="NewReceiptViewController" sceneMemberID="viewController">
+                <viewController title="New Receipt" id="qKZ-cK-ubm" customClass="NewReceiptViewController" customModule="Cute" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="bOQ-R6-s6S">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="281"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1046,7 +1062,7 @@ DQ
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="163" id="keD-Xv-MpI"/>
                                 </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="VendorID Field" drawsBackground="YES" id="CfJ-il-cdK">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Vendor ID" drawsBackground="YES" id="CfJ-il-cdK">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1070,7 +1086,10 @@ DQ
                                     <constraint firstAttribute="width" constant="82" id="dZ4-bc-d66"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Unit Price" drawsBackground="YES" id="wBY-ir-hsg">
-                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="JjQ-Uc-kDX"/>
+                                    <numberFormatter key="formatter" formatterBehavior="10_0" positiveFormat="#,##0.00" negativeFormat="-#,##0.00" thousandSeparator="," id="JjQ-Uc-kDX">
+                                        <decimal key="minimum" value="NaN"/>
+                                        <decimal key="maximum" value="NaN"/>
+                                    </numberFormatter>
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1089,7 +1108,7 @@ DQ
 </string>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="AddNewReceiptButton:" target="qKZ-cK-ubm" id="NRv-ej-da0"/>
+                                    <action selector="NewReceiptAddButton:" target="qKZ-cK-ubm" id="EqM-4F-3FH"/>
                                 </connections>
                             </button>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTp-4w-722">
@@ -1098,7 +1117,7 @@ DQ
                                     <rect key="frame" x="1" y="0.0" width="438" height="176"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnReordering="NO" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="Vrn-p7-cpV" viewBased="YES" id="q6s-2P-72L">
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnReordering="NO" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="Vrn-p7-cpV" viewBased="YES" id="q6s-2P-72L">
                                             <rect key="frame" x="0.0" y="0.0" width="438" height="151"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
@@ -1125,7 +1144,7 @@ DQ
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn width="247" minWidth="40" maxWidth="1000" id="8GY-mo-3LF">
+                                                <tableColumn width="219" minWidth="40" maxWidth="1000" id="8GY-mo-3LF">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Vendor ID">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -1139,12 +1158,12 @@ DQ
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="yAV-JS-nm8">
-                                                            <rect key="frame" x="58" y="1" width="247" height="40"/>
+                                                            <rect key="frame" x="58" y="1" width="219" height="40"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn width="55" minWidth="10" maxWidth="3.4028234663852886e+38" id="2j6-nq-fIp">
+                                                <tableColumn width="46" minWidth="10" maxWidth="3.4028234663852886e+38" id="2j6-nq-fIp">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="QTY">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -1158,12 +1177,12 @@ DQ
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="F5Q-ik-163">
-                                                            <rect key="frame" x="308" y="1" width="55" height="40"/>
+                                                            <rect key="frame" x="280" y="1" width="46" height="40"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn width="70" minWidth="10" maxWidth="3.4028234663852886e+38" id="ckC-cY-wWw">
+                                                <tableColumn width="107" minWidth="10" maxWidth="3.4028234663852886e+38" id="ckC-cY-wWw">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Unit Price">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -1177,15 +1196,12 @@ DQ
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="hDr-if-x5B">
-                                                            <rect key="frame" x="366" y="1" width="70" height="40"/>
+                                                            <rect key="frame" x="329" y="1" width="107" height="40"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
                                             </tableColumns>
-                                            <connections>
-                                                <action selector="NewReceiptTableSelect:" target="qKZ-cK-ubm" id="BOm-T8-tHV"/>
-                                            </connections>
                                         </tableView>
                                     </subviews>
                                 </clipView>
@@ -1193,7 +1209,7 @@ DQ
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="166" id="z55-XM-rhN"/>
                                 </constraints>
                                 <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="mu6-lk-xXC">
-                                    <rect key="frame" x="1" y="7" width="0.0" height="16"/>
+                                    <rect key="frame" x="1" y="160" width="438" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="uf4-uY-72M">
@@ -1212,7 +1228,7 @@ DQ
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="DeleteNewReceiptButton:" target="qKZ-cK-ubm" id="AHv-jQ-oUv"/>
+                                    <action selector="NewReceiptDeleteButton:" target="qKZ-cK-ubm" id="c5l-89-5Ta"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cGh-Jt-Ewg">
@@ -1222,7 +1238,7 @@ DQ
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="EditNewReceiptButton:" target="qKZ-cK-ubm" id="gYX-dK-ifH"/>
+                                    <action selector="NewReceiptEditButton:" target="qKZ-cK-ubm" id="wtd-KU-HFk"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="akX-yE-bX0">
@@ -1232,7 +1248,7 @@ DQ
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="SaveNewReceiptButton:" target="qKZ-cK-ubm" id="jKE-9e-mdG"/>
+                                    <action selector="NewReceiptSaveButton:" target="qKZ-cK-ubm" id="c5n-WO-b1x"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1264,25 +1280,25 @@ DQ
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="DeleteRowButton" destination="UkF-AO-Okl" id="tJr-4W-F62"/>
-                        <outlet property="EditRowButton" destination="cGh-Jt-Ewg" id="OlW-8j-zOy"/>
-                        <outlet property="ItemIDField" destination="T5A-hb-72j" id="Nlk-JU-YUv"/>
-                        <outlet property="NewReceiptTable" destination="q6s-2P-72L" id="C5S-bu-0RF"/>
-                        <outlet property="QuantityField" destination="ARh-Mx-w4F" id="Rl7-cz-BlK"/>
-                        <outlet property="SaveNewReceiptButtonOutlet" destination="akX-yE-bX0" id="4v8-sU-iQW"/>
-                        <outlet property="UnitPriceField" destination="MnT-sc-ZF1" id="kpG-Wr-gxy"/>
-                        <outlet property="VendorIDField" destination="qE3-bJ-eH5" id="Hu1-Lg-oZV"/>
+                        <outlet property="NewReceiptDeleteButtonOutlet" destination="UkF-AO-Okl" id="ehb-lG-7vX"/>
+                        <outlet property="NewReceiptEditButtonOutlet" destination="cGh-Jt-Ewg" id="3p3-9o-ked"/>
+                        <outlet property="NewReceiptItemIDField" destination="T5A-hb-72j" id="17j-b4-b2r"/>
+                        <outlet property="NewReceiptQuantityField" destination="ARh-Mx-w4F" id="Bjr-ti-JKt"/>
+                        <outlet property="NewReceiptSaveButtonOutlet" destination="akX-yE-bX0" id="Afw-0S-vCi"/>
+                        <outlet property="NewReceiptTable" destination="q6s-2P-72L" id="FRc-6a-oG9"/>
+                        <outlet property="NewReceiptUnitPriceField" destination="MnT-sc-ZF1" id="Fp8-Yh-sGA"/>
+                        <outlet property="NewReceiptVendorIDField" destination="qE3-bJ-eH5" id="kDj-PL-xnU"/>
                         <segue destination="ClU-w1-V9w" kind="sheet" identifier="EditNewReceiptSegue" id="Yg3-B8-BVV"/>
                     </connections>
                 </viewController>
                 <customObject id="wzh-V1-Zvj" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="614" y="1063"/>
+            <point key="canvasLocation" x="634" y="1062.5"/>
         </scene>
         <!--Edit New Receipt-->
         <scene sceneID="F3L-gf-9lf">
             <objects>
-                <viewController title="Edit New Receipt" id="ClU-w1-V9w" customClass="EditNewReceiptViewController" sceneMemberID="viewController">
+                <viewController title="Edit New Receipt" id="ClU-w1-V9w" customClass="EditNewReceiptViewController" customModule="Cute" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="G2T-XH-pcF">
                         <rect key="frame" x="0.0" y="0.0" width="435" height="107"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1303,7 +1319,7 @@ DQ
                                 <constraints>
                                     <constraint firstAttribute="width" constant="163" id="qd4-qo-N3d"/>
                                 </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="VendorID Field" drawsBackground="YES" id="WTg-Vm-AaH">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Vendor ID" drawsBackground="YES" id="WTg-Vm-AaH">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1343,7 +1359,7 @@ DQ
 </string>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="DoneEditingButton:" target="ClU-w1-V9w" id="SfE-7d-Vcs"/>
+                                    <action selector="EditNewReceiptSaveButton:" target="ClU-w1-V9w" id="yTA-zC-tqU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1363,15 +1379,15 @@ DQ
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="EditItemIDField" destination="u3d-v4-EVV" id="oEr-5G-pB6"/>
-                        <outlet property="EditQuantityField" destination="nzk-gN-91a" id="Mic-4M-oQ6"/>
-                        <outlet property="EditUnitPriceField" destination="jWE-Hp-zY2" id="Kwg-ha-8Nr"/>
-                        <outlet property="EditVendorIDField" destination="Y2K-0p-Tzw" id="qWm-ba-EZs"/>
+                        <outlet property="EditNewReceiptItemIDField" destination="u3d-v4-EVV" id="7Xx-H1-kag"/>
+                        <outlet property="EditNewReceiptQuantityField" destination="nzk-gN-91a" id="HaK-Mf-72S"/>
+                        <outlet property="EditNewReceiptUnitPriceField" destination="jWE-Hp-zY2" id="kYp-N0-8NE"/>
+                        <outlet property="EditNewReceiptVendorIDField" destination="Y2K-0p-Tzw" id="jbY-Za-znL"/>
                     </connections>
                 </viewController>
                 <customObject id="zMf-eh-dGl" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1130" y="1063"/>
+            <point key="canvasLocation" x="1129.5" y="1062.5"/>
         </scene>
         <!--Modify Data-->
         <scene sceneID="IcA-qi-c9z">
@@ -1397,7 +1413,7 @@ DQ
         <!--Modify Data-->
         <scene sceneID="gDG-1b-1LO">
             <objects>
-                <viewController title="Modify Data" id="Cr6-CP-XlA" customClass="ModifyDataViewController" sceneMemberID="viewController">
+                <viewController title="Modify Data" id="Cr6-CP-XlA" sceneMemberID="viewController">
                     <view key="view" id="gos-xK-7Xz">
                         <rect key="frame" x="0.0" y="0.0" width="435" height="169"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1547,7 +1563,7 @@ DQ
         <!--Employees Services-->
         <scene sceneID="qLe-dt-Nuz">
             <objects>
-                <viewController title="Employees Services" id="wSj-nu-Iu3" customClass="EmployeesServicesViewController" sceneMemberID="viewController">
+                <viewController title="Employees Services" id="wSj-nu-Iu3" sceneMemberID="viewController">
                     <view key="view" id="zTg-sF-YJz">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="350"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1970,7 +1986,7 @@ DQ
                         <outlet property="FindByTextField" destination="hTi-kO-BxJ" id="WWx-kd-OhU"/>
                         <outlet property="ModifyEmployeeButtonOutlet" destination="Rrg-BI-3iG" id="KAd-hq-YQK"/>
                         <outlet property="NameOutlet" destination="Xbm-0G-gh2" id="LlG-ex-sCo"/>
-                        <segue destination="Xex-ya-mwp" kind="show" identifier="ModifyEmployeeSegue" id="VHN-yu-19F"/>
+                        <segue destination="Xex-ya-mwp" kind="sheet" identifier="ModifyEmployeeSegue" id="VHN-yu-19F"/>
                     </connections>
                 </viewController>
                 <customObject id="YTk-xd-pKz" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -1980,7 +1996,7 @@ DQ
         <!--Modify Employee-->
         <scene sceneID="OhG-Lm-ZMw">
             <objects>
-                <viewController title="Modify Employee" id="Xex-ya-mwp" customClass="EditEmployeeInfoViewController" sceneMemberID="viewController">
+                <viewController title="Modify Employee" id="Xex-ya-mwp" sceneMemberID="viewController">
                     <view key="view" id="gfN-md-Unf">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="394"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2216,7 +2232,7 @@ DQ
         <!--Employee Access-->
         <scene sceneID="SqG-L6-Gyo">
             <objects>
-                <viewController title="Employee Access" id="sA2-rf-64l" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Employee Access" id="sA2-rf-64l" sceneMemberID="viewController">
                     <view key="view" id="Hb2-Gc-ysJ">
                         <rect key="frame" x="0.0" y="0.0" width="283" height="123"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2308,7 +2324,7 @@ DQ
         <!--Sale Invoice-->
         <scene sceneID="oed-ry-4Am">
             <objects>
-                <viewController title="Sale Invoice" id="G29-MG-LIn" customClass="SaleInvoiceViewController" sceneMemberID="viewController">
+                <viewController title="Sale Invoice" id="G29-MG-LIn" sceneMemberID="viewController">
                     <view key="view" id="KOQ-R0-nat">
                         <rect key="frame" x="0.0" y="0.0" width="721" height="413"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2655,7 +2671,7 @@ DQ
         <!--Customer Info-->
         <scene sceneID="CRp-h2-wqs">
             <objects>
-                <viewController title="Customer Info" id="qWD-Uj-IbF" customClass="SaleInvoiceViewController" sceneMemberID="viewController">
+                <viewController title="Customer Info" id="qWD-Uj-IbF" sceneMemberID="viewController">
                     <view key="view" id="r8P-fi-o71">
                         <rect key="frame" x="0.0" y="0.0" width="283" height="123"/>
                         <autoresizingMask key="autoresizingMask"/>
