@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F7391F62166934F00BCC0B7 /* AdminData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F7391F42166934F00BCC0B7 /* AdminData.xcdatamodeld */; };
+		5F7392342166A23500BCC0B7 /* Cute.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F7392322166A23500BCC0B7 /* Cute.xcdatamodeld */; };
+		5F73923821677CB400BCC0B7 /* NewAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F73923721677CB400BCC0B7 /* NewAdminViewController.swift */; };
+		5F73923B2168CE4B00BCC0B7 /* NewReceipt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7392392168CE4B00BCC0B7 /* NewReceipt.storyboard */; };
+		5F73923D2169349900BCC0B7 /* DetailedNewReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F73923C2169349900BCC0B7 /* DetailedNewReceiptViewController.swift */; };
 		5F798A67215EA6C200EA4B37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F798A66215EA6C200EA4B37 /* AppDelegate.swift */; };
 		5F798A69215EA6C200EA4B37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F798A68215EA6C200EA4B37 /* ViewController.swift */; };
 		5F798A6B215EA6C400EA4B37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F798A6A215EA6C400EA4B37 /* Assets.xcassets */; };
 		5F798A6E215EA6C400EA4B37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F798A6C215EA6C400EA4B37 /* Main.storyboard */; };
 		5F798A7A215EA6C400EA4B37 /* CuteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F798A79215EA6C400EA4B37 /* CuteTests.swift */; };
 		5F798A85215EA6C500EA4B37 /* CuteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F798A84215EA6C500EA4B37 /* CuteUITests.swift */; };
-		5F798A93216003DC00EA4B37 /* NewReceiptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F798A92216003DC00EA4B37 /* NewReceiptController.swift */; };
+		5F798A93216003DC00EA4B37 /* NewReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F798A92216003DC00EA4B37 /* NewReceiptViewController.swift */; };
 		5F798A972163CB7D00EA4B37 /* EditNewReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F798A962163CB7D00EA4B37 /* EditNewReceiptViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5F7391F52166934F00BCC0B7 /* AdminData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AdminData.xcdatamodel; sourceTree = "<group>"; };
+		5F7392332166A23500BCC0B7 /* Cute.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cute.xcdatamodel; sourceTree = "<group>"; };
+		5F73923721677CB400BCC0B7 /* NewAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAdminViewController.swift; sourceTree = "<group>"; };
+		5F73923A2168CE4B00BCC0B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Cute/Base.lproj/NewReceipt.storyboard; sourceTree = "<group>"; };
+		5F73923C2169349900BCC0B7 /* DetailedNewReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedNewReceiptViewController.swift; sourceTree = "<group>"; };
 		5F798A63215EA6C200EA4B37 /* Cute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F798A66215EA6C200EA4B37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F798A68215EA6C200EA4B37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +56,7 @@
 		5F798A80215EA6C400EA4B37 /* CuteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F798A84215EA6C500EA4B37 /* CuteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteUITests.swift; sourceTree = "<group>"; };
 		5F798A86215EA6C500EA4B37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F798A92216003DC00EA4B37 /* NewReceiptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReceiptController.swift; sourceTree = "<group>"; };
+		5F798A92216003DC00EA4B37 /* NewReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReceiptViewController.swift; sourceTree = "<group>"; };
 		5F798A962163CB7D00EA4B37 /* EditNewReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNewReceiptViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +88,7 @@
 		5F798A5A215EA6C200EA4B37 = {
 			isa = PBXGroup;
 			children = (
+				5F7392392168CE4B00BCC0B7 /* NewReceipt.storyboard */,
 				5F798A65215EA6C200EA4B37 /* Cute */,
 				5F798A78215EA6C400EA4B37 /* CuteTests */,
 				5F798A83215EA6C500EA4B37 /* CuteUITests */,
@@ -102,7 +109,7 @@
 		5F798A65215EA6C200EA4B37 /* Cute */ = {
 			isa = PBXGroup;
 			children = (
-				5F798A92216003DC00EA4B37 /* NewReceiptController.swift */,
+				5F798A92216003DC00EA4B37 /* NewReceiptViewController.swift */,
 				5F798A66215EA6C200EA4B37 /* AppDelegate.swift */,
 				5F798A68215EA6C200EA4B37 /* ViewController.swift */,
 				5F798A6A215EA6C400EA4B37 /* Assets.xcassets */,
@@ -110,7 +117,9 @@
 				5F798A6F215EA6C400EA4B37 /* Info.plist */,
 				5F798A70215EA6C400EA4B37 /* Cute.entitlements */,
 				5F798A962163CB7D00EA4B37 /* EditNewReceiptViewController.swift */,
-				5F7391F42166934F00BCC0B7 /* AdminData.xcdatamodeld */,
+				5F7392322166A23500BCC0B7 /* Cute.xcdatamodeld */,
+				5F73923721677CB400BCC0B7 /* NewAdminViewController.swift */,
+				5F73923C2169349900BCC0B7 /* DetailedNewReceiptViewController.swift */,
 			);
 			path = Cute;
 			sourceTree = "<group>";
@@ -238,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F798A6B215EA6C400EA4B37 /* Assets.xcassets in Resources */,
+				5F73923B2168CE4B00BCC0B7 /* NewReceipt.storyboard in Resources */,
 				5F798A6E215EA6C400EA4B37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,10 +274,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F798A972163CB7D00EA4B37 /* EditNewReceiptViewController.swift in Sources */,
+				5F73923821677CB400BCC0B7 /* NewAdminViewController.swift in Sources */,
 				5F798A69215EA6C200EA4B37 /* ViewController.swift in Sources */,
+				5F7392342166A23500BCC0B7 /* Cute.xcdatamodeld in Sources */,
+				5F73923D2169349900BCC0B7 /* DetailedNewReceiptViewController.swift in Sources */,
 				5F798A67215EA6C200EA4B37 /* AppDelegate.swift in Sources */,
-				5F7391F62166934F00BCC0B7 /* AdminData.xcdatamodeld in Sources */,
-				5F798A93216003DC00EA4B37 /* NewReceiptController.swift in Sources */,
+				5F798A93216003DC00EA4B37 /* NewReceiptViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +315,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5F7392392168CE4B00BCC0B7 /* NewReceipt.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F73923A2168CE4B00BCC0B7 /* Base */,
+			);
+			name = NewReceipt.storyboard;
+			sourceTree = "<group>";
+		};
 		5F798A6C215EA6C400EA4B37 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -585,13 +605,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		5F7391F42166934F00BCC0B7 /* AdminData.xcdatamodeld */ = {
+		5F7392322166A23500BCC0B7 /* Cute.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				5F7391F52166934F00BCC0B7 /* AdminData.xcdatamodel */,
+				5F7392332166A23500BCC0B7 /* Cute.xcdatamodel */,
 			);
-			currentVersion = 5F7391F52166934F00BCC0B7 /* AdminData.xcdatamodel */;
-			path = AdminData.xcdatamodeld;
+			currentVersion = 5F7392332166A23500BCC0B7 /* Cute.xcdatamodel */;
+			path = Cute.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

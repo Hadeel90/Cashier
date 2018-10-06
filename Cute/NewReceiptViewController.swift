@@ -24,12 +24,10 @@ class NewReceipt{
     }
 }
 
-class NewReceiptWindowController: NSWindowController {
-    
-}
-
-class NewReceiptViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
+class NewReceiptViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate, NSWindowDelegate {
     //outlets and variables
+    @IBOutlet weak var NewReceiptVendorField: NSTextField!
+    @IBOutlet weak var NewReceiptDate: NSTextField!
     @IBOutlet weak var NewReceiptItemIDField: NSTextField!
     @IBOutlet weak var NewReceiptVendorIDField: NSTextField!
     @IBOutlet weak var NewReceiptQuantityField: NSTextField!
@@ -46,9 +44,16 @@ class NewReceiptViewController: NSViewController, NSTableViewDataSource, NSTable
     var item: NewReceipt!
     
     //methods
-    var cellSize: CGSize!
     override func viewDidLoad() {
-        cellSize = NewReceiptTable.frameOfCell(atColumn: 3, row: 0).size
+        
+    }
+    
+    override func viewDidAppear() {
+        view.window?.delegate = self
+        let currentDate = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d/M/yyyy HH:mm:ss"
+        NewReceiptDate.stringValue = "\(dateFormatter.string(from: currentDate))"
     }
     
     func handleSheetDismissed() {
@@ -108,6 +113,28 @@ class NewReceiptViewController: NSViewController, NSTableViewDataSource, NSTable
             view?.unitPriceValue = (NewReceiptTable.view(atColumn: 3, row: rowIndex, makeIfNecessary: false) as! NSTextField).stringValue
             
         }
+        
+        if (segue.identifier == "DetailedNewReceiptSegue") {
+            let view = segue.destinationController as? DetailedNewReceiptViewController
+            
+            view?.vendor = NewReceiptVendorField.stringValue
+            view?.currentDate = NewReceiptDate.stringValue
+            view?.newReceipts = newReceipts
+        }
+    }
+    
+    func windowShouldClose(_ sender: NSWindow) -> Bool {
+        let closeAlert = NSAlert()
+        closeAlert.messageText = "Unsaved Data"
+        closeAlert.informativeText = "You have unsaved data. Are you sure you want to close the form?"
+        closeAlert.addButton(withTitle: "Yes")
+        closeAlert.addButton(withTitle: "Cancel")
+        closeAlert.alertStyle = NSAlert.Style(rawValue: 2)!
+        if newReceipts.count > 0 {
+            let result = closeAlert.runModal()
+            return result.rawValue != 1001
+        }
+        return true
     }
     
     //actions
@@ -158,6 +185,7 @@ class NewReceiptViewController: NSViewController, NSTableViewDataSource, NSTable
         NewReceiptTable.reloadData()
     }
     @IBAction func NewReceiptSaveButton(_ sender: Any) {
+        performSegue(withIdentifier: "DetailedNewReceiptSegue", sender: self)
     }
 
 }
