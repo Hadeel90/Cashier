@@ -34,7 +34,7 @@ class EditNewReceiptViewController: NSViewController {
             presenter.item.itemID = EditNewReceiptItemIDField.stringValue
             presenter.item.vendorID = EditNewReceiptVendorIDField.stringValue
             presenter.item.quantity = Int(EditNewReceiptQuantityField.intValue)
-            presenter.item.unitPrice = EditNewReceiptUnitPriceField.doubleValue
+            presenter.item.unitCost = EditNewReceiptUnitPriceField.doubleValue
             presenter.handleSheetDismissed()
         }
         dismiss(self)

@@ -20,20 +20,15 @@ class ViewController: NSViewController, NSTabViewDelegate {
     @IBOutlet weak var ModifyDataButtonOutlet: NSButton!
     @IBOutlet weak var EmployeesServicesButtonOutlet: NSButton!
     @IBOutlet weak var DetailedStoreStatsButtonOutlet: NSButton!
+    @IBOutlet weak var ReferenceNumbersButtonOutlet: NSButton!
     
-    lazy var adminButtons: [NSButton] = [self.NewReceiptButtonOutlet, self.ModifyDataButtonOutlet, self.EmployeesServicesButtonOutlet, self.DetailedStoreStatsButtonOutlet]
+    lazy var adminButtons: [NSButton] = [self.NewReceiptButtonOutlet, self.ModifyDataButtonOutlet, self.EmployeesServicesButtonOutlet, self.DetailedStoreStatsButtonOutlet, self.ReferenceNumbersButtonOutlet]
     lazy var adminFields: [NSTextField] = [self.AdminUsernameField, self.AdminPasswordField]
     var buttonState: Int = 0
     
     //methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-//        var pathToFile = "usr/lib"
-//        var pathUrl = self.home.appendingPathComponent(pathToFile)
-//        UserDefaults.standard.set("admin", forKey: "AdminUsername")
-//        UserDefaults.standard.set("1234", forKey: "AdminPassword")
-//        UserDefaults.standard.synchronize()
     }
     
     override func viewDidAppear() {
@@ -157,6 +152,9 @@ class ViewController: NSViewController, NSTabViewDelegate {
     }
     @IBAction func DetailedStoreStatsButton(_ sender: Any) {
         performSegue(withIdentifier: "DetailedStoreStatsSegue", sender: self)
+    }
+    @IBAction func ReferenceNumbersButton(_ sender: Any) {
+        performSegue(withIdentifier: "ReferenceNumbersSegue", sender: self)
     }
     
 }

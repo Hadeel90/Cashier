@@ -11,16 +11,25 @@ import Cocoa;
 
 class NewReceipt{
     //properties
-    var itemID: String!
-    var vendorID: String!
+    var itemID, vendorID: String!
     var quantity: Int!
-    var unitPrice: Double!
+    var unitCost, indirectCost, profitPercentage, price, discount, finalPrice: Double!
     
     init(_itemID: String, _vendorID: String, _quantity: Int, _unitPrice: Double){
         self.itemID = _itemID
         self.vendorID = _vendorID
         self.quantity = _quantity
-        self.unitPrice = _unitPrice
+        self.unitCost = _unitPrice
+        self.indirectCost = 0
+        self.profitPercentage = 0
+        self.price = (unitCost + indirectCost) * (1 + profitPercentage/100)
+        self.discount = 0
+        self.finalPrice = price * (1 - (discount/100))
+    }
+    
+    func refresh() {
+        self.price = (unitCost + indirectCost) * (1 + profitPercentage/100)
+        self.finalPrice = price * (1 - (discount/100))
     }
 }
 
@@ -77,7 +86,7 @@ class NewReceiptViewController: NSViewController, NSTableViewDataSource, NSTable
         }
         
         switch tableColumn?.title {
-        case "Item ID":
+        case "Reference":
             view.stringValue = newReceipts[row].itemID
         case "Vendor ID":
             view.stringValue = newReceipts[row].vendorID
@@ -88,7 +97,7 @@ class NewReceiptViewController: NSViewController, NSTableViewDataSource, NSTable
             currencyFormatter.usesGroupingSeparator = true
             currencyFormatter.numberStyle = .currency
             currencyFormatter.currencyCode = "SR "
-            view.stringValue = currencyFormatter.string(from: newReceipts[row].unitPrice! as NSNumber)!
+            view.stringValue = currencyFormatter.string(from: newReceipts[row].unitCost! as NSNumber)!
         default:
             break
         }
@@ -119,7 +128,9 @@ class NewReceiptViewController: NSViewController, NSTableViewDataSource, NSTable
             
             view?.vendor = NewReceiptVendorField.stringValue
             view?.currentDate = NewReceiptDate.stringValue
-            view?.newReceipts = newReceipts
+            
+            let sortedNewReceipts = newReceipts.sorted(by: {$0.itemID < $1.itemID})
+            view?.newReceipts = sortedNewReceipts
         }
     }
     
@@ -177,12 +188,19 @@ class NewReceiptViewController: NSViewController, NSTableViewDataSource, NSTable
         
     }
     @IBAction func NewReceiptEditButton(_ sender: Any) {
-        performSegue(withIdentifier: "EditNewReceiptSegue", sender: self)
+        if (newReceipts.count > 0) {
+            performSegue(withIdentifier: "EditNewReceiptSegue", sender: self)
+        }
+        NewReceiptTable.deselectAll(self)
     }
     @IBAction func NewReceiptDeleteButton(_ sender: Any) {
-        rowIndex = NewReceiptTable.selectedRow
-        newReceipts.remove(at: rowIndex)
-        NewReceiptTable.reloadData()
+        if (newReceipts.count > 0) {
+            rowIndex = NewReceiptTable.selectedRow
+            newReceipts.remove(at: rowIndex)
+            NewReceiptTable.deselectAll(self)
+            NewReceiptTable.reloadData()
+        }
+        
     }
     @IBAction func NewReceiptSaveButton(_ sender: Any) {
         performSegue(withIdentifier: "DetailedNewReceiptSegue", sender: self)
