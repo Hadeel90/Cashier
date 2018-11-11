@@ -16,8 +16,8 @@
 		5F798A69215EA6C200EA4B37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F798A68215EA6C200EA4B37 /* ViewController.swift */; };
 		5F798A6B215EA6C400EA4B37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F798A6A215EA6C400EA4B37 /* Assets.xcassets */; };
 		5F798A6E215EA6C400EA4B37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F798A6C215EA6C400EA4B37 /* Main.storyboard */; };
-		5F798A7A215EA6C400EA4B37 /* CuteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F798A79215EA6C400EA4B37 /* CuteTests.swift */; };
-		5F798A85215EA6C500EA4B37 /* CuteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F798A84215EA6C500EA4B37 /* CuteUITests.swift */; };
+		5F798A7A215EA6C400EA4B37 /* CashierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F798A79215EA6C400EA4B37 /* CashierTests.swift */; };
+		5F798A85215EA6C500EA4B37 /* CashierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F798A84215EA6C500EA4B37 /* CashierUITests.swift */; };
 		5F798A93216003DC00EA4B37 /* NewReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F798A92216003DC00EA4B37 /* NewReceiptViewController.swift */; };
 		5F798A972163CB7D00EA4B37 /* EditNewReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F798A962163CB7D00EA4B37 /* EditNewReceiptViewController.swift */; };
 /* End PBXBuildFile section */
@@ -45,18 +45,18 @@
 		5F73923A2168CE4B00BCC0B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Cute/Base.lproj/NewReceipt.storyboard; sourceTree = "<group>"; };
 		5F73923C2169349900BCC0B7 /* DetailedNewReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedNewReceiptViewController.swift; sourceTree = "<group>"; };
 		5F73923E216D3B2100BCC0B7 /* ReferenceNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceNumbersViewController.swift; sourceTree = "<group>"; };
-		5F798A63215EA6C200EA4B37 /* Cute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cute.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F798A63215EA6C200EA4B37 /* Cashier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cashier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F798A66215EA6C200EA4B37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F798A68215EA6C200EA4B37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5F798A6A215EA6C400EA4B37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F798A6D215EA6C400EA4B37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F798A6F215EA6C400EA4B37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F798A70215EA6C400EA4B37 /* Cute.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cute.entitlements; sourceTree = "<group>"; };
-		5F798A75215EA6C400EA4B37 /* CuteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F798A79215EA6C400EA4B37 /* CuteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteTests.swift; sourceTree = "<group>"; };
+		5F798A70215EA6C400EA4B37 /* Cashier.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cashier.entitlements; sourceTree = "<group>"; };
+		5F798A75215EA6C400EA4B37 /* CashierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F798A79215EA6C400EA4B37 /* CashierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashierTests.swift; sourceTree = "<group>"; };
 		5F798A7B215EA6C400EA4B37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F798A80215EA6C400EA4B37 /* CuteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F798A84215EA6C500EA4B37 /* CuteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteUITests.swift; sourceTree = "<group>"; };
+		5F798A80215EA6C400EA4B37 /* CashierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F798A84215EA6C500EA4B37 /* CashierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashierUITests.swift; sourceTree = "<group>"; };
 		5F798A86215EA6C500EA4B37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F798A92216003DC00EA4B37 /* NewReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReceiptViewController.swift; sourceTree = "<group>"; };
 		5F798A962163CB7D00EA4B37 /* EditNewReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNewReceiptViewController.swift; sourceTree = "<group>"; };
@@ -91,9 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				5F7392392168CE4B00BCC0B7 /* NewReceipt.storyboard */,
-				5F798A65215EA6C200EA4B37 /* Cute */,
-				5F798A78215EA6C400EA4B37 /* CuteTests */,
-				5F798A83215EA6C500EA4B37 /* CuteUITests */,
+				5F798A65215EA6C200EA4B37 /* Cashier */,
+				5F798A78215EA6C400EA4B37 /* CashierTests */,
+				5F798A83215EA6C500EA4B37 /* CashierUITests */,
 				5F798A64215EA6C200EA4B37 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,14 +101,14 @@
 		5F798A64215EA6C200EA4B37 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5F798A63215EA6C200EA4B37 /* Cute.app */,
-				5F798A75215EA6C400EA4B37 /* CuteTests.xctest */,
-				5F798A80215EA6C400EA4B37 /* CuteUITests.xctest */,
+				5F798A63215EA6C200EA4B37 /* Cashier.app */,
+				5F798A75215EA6C400EA4B37 /* CashierTests.xctest */,
+				5F798A80215EA6C400EA4B37 /* CashierUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5F798A65215EA6C200EA4B37 /* Cute */ = {
+		5F798A65215EA6C200EA4B37 /* Cashier */ = {
 			isa = PBXGroup;
 			children = (
 				5F798A92216003DC00EA4B37 /* NewReceiptViewController.swift */,
@@ -117,40 +117,40 @@
 				5F798A6A215EA6C400EA4B37 /* Assets.xcassets */,
 				5F798A6C215EA6C400EA4B37 /* Main.storyboard */,
 				5F798A6F215EA6C400EA4B37 /* Info.plist */,
-				5F798A70215EA6C400EA4B37 /* Cute.entitlements */,
+				5F798A70215EA6C400EA4B37 /* Cashier.entitlements */,
 				5F798A962163CB7D00EA4B37 /* EditNewReceiptViewController.swift */,
 				5F7392322166A23500BCC0B7 /* Cute.xcdatamodeld */,
 				5F73923721677CB400BCC0B7 /* NewAdminViewController.swift */,
 				5F73923C2169349900BCC0B7 /* DetailedNewReceiptViewController.swift */,
 				5F73923E216D3B2100BCC0B7 /* ReferenceNumbersViewController.swift */,
 			);
-			path = Cute;
+			path = Cashier;
 			sourceTree = "<group>";
 		};
-		5F798A78215EA6C400EA4B37 /* CuteTests */ = {
+		5F798A78215EA6C400EA4B37 /* CashierTests */ = {
 			isa = PBXGroup;
 			children = (
-				5F798A79215EA6C400EA4B37 /* CuteTests.swift */,
+				5F798A79215EA6C400EA4B37 /* CashierTests.swift */,
 				5F798A7B215EA6C400EA4B37 /* Info.plist */,
 			);
-			path = CuteTests;
+			path = CashierTests;
 			sourceTree = "<group>";
 		};
-		5F798A83215EA6C500EA4B37 /* CuteUITests */ = {
+		5F798A83215EA6C500EA4B37 /* CashierUITests */ = {
 			isa = PBXGroup;
 			children = (
-				5F798A84215EA6C500EA4B37 /* CuteUITests.swift */,
+				5F798A84215EA6C500EA4B37 /* CashierUITests.swift */,
 				5F798A86215EA6C500EA4B37 /* Info.plist */,
 			);
-			path = CuteUITests;
+			path = CashierUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5F798A62215EA6C200EA4B37 /* Cute */ = {
+		5F798A62215EA6C200EA4B37 /* Cashier */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F798A89215EA6C500EA4B37 /* Build configuration list for PBXNativeTarget "Cute" */;
+			buildConfigurationList = 5F798A89215EA6C500EA4B37 /* Build configuration list for PBXNativeTarget "Cashier" */;
 			buildPhases = (
 				5F798A5F215EA6C200EA4B37 /* Sources */,
 				5F798A60215EA6C200EA4B37 /* Frameworks */,
@@ -160,14 +160,14 @@
 			);
 			dependencies = (
 			);
-			name = Cute;
+			name = Cashier;
 			productName = Cute;
-			productReference = 5F798A63215EA6C200EA4B37 /* Cute.app */;
+			productReference = 5F798A63215EA6C200EA4B37 /* Cashier.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5F798A74215EA6C400EA4B37 /* CuteTests */ = {
+		5F798A74215EA6C400EA4B37 /* CashierTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F798A8C215EA6C500EA4B37 /* Build configuration list for PBXNativeTarget "CuteTests" */;
+			buildConfigurationList = 5F798A8C215EA6C500EA4B37 /* Build configuration list for PBXNativeTarget "CashierTests" */;
 			buildPhases = (
 				5F798A71215EA6C400EA4B37 /* Sources */,
 				5F798A72215EA6C400EA4B37 /* Frameworks */,
@@ -178,14 +178,14 @@
 			dependencies = (
 				5F798A77215EA6C400EA4B37 /* PBXTargetDependency */,
 			);
-			name = CuteTests;
+			name = CashierTests;
 			productName = CuteTests;
-			productReference = 5F798A75215EA6C400EA4B37 /* CuteTests.xctest */;
+			productReference = 5F798A75215EA6C400EA4B37 /* CashierTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5F798A7F215EA6C400EA4B37 /* CuteUITests */ = {
+		5F798A7F215EA6C400EA4B37 /* CashierUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F798A8F215EA6C500EA4B37 /* Build configuration list for PBXNativeTarget "CuteUITests" */;
+			buildConfigurationList = 5F798A8F215EA6C500EA4B37 /* Build configuration list for PBXNativeTarget "CashierUITests" */;
 			buildPhases = (
 				5F798A7C215EA6C400EA4B37 /* Sources */,
 				5F798A7D215EA6C400EA4B37 /* Frameworks */,
@@ -196,9 +196,9 @@
 			dependencies = (
 				5F798A82215EA6C400EA4B37 /* PBXTargetDependency */,
 			);
-			name = CuteUITests;
+			name = CashierUITests;
 			productName = CuteUITests;
-			productReference = 5F798A80215EA6C400EA4B37 /* CuteUITests.xctest */;
+			productReference = 5F798A80215EA6C400EA4B37 /* CashierUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -224,7 +224,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5F798A5E215EA6C200EA4B37 /* Build configuration list for PBXProject "Cute" */;
+			buildConfigurationList = 5F798A5E215EA6C200EA4B37 /* Build configuration list for PBXProject "Cashier" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -237,9 +237,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5F798A62215EA6C200EA4B37 /* Cute */,
-				5F798A74215EA6C400EA4B37 /* CuteTests */,
-				5F798A7F215EA6C400EA4B37 /* CuteUITests */,
+				5F798A62215EA6C200EA4B37 /* Cashier */,
+				5F798A74215EA6C400EA4B37 /* CashierTests */,
+				5F798A7F215EA6C400EA4B37 /* CashierUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -291,7 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F798A7A215EA6C400EA4B37 /* CuteTests.swift in Sources */,
+				5F798A7A215EA6C400EA4B37 /* CashierTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F798A85215EA6C500EA4B37 /* CuteUITests.swift in Sources */,
+				5F798A85215EA6C500EA4B37 /* CashierUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,12 +308,12 @@
 /* Begin PBXTargetDependency section */
 		5F798A77215EA6C400EA4B37 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5F798A62215EA6C200EA4B37 /* Cute */;
+			target = 5F798A62215EA6C200EA4B37 /* Cashier */;
 			targetProxy = 5F798A76215EA6C400EA4B37 /* PBXContainerItemProxy */;
 		};
 		5F798A82215EA6C400EA4B37 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5F798A62215EA6C200EA4B37 /* Cute */;
+			target = 5F798A62215EA6C200EA4B37 /* Cashier */;
 			targetProxy = 5F798A81215EA6C400EA4B37 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -457,10 +457,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Cute/Cute.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Cashier/Cashier.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Cute/Info.plist;
+				INFOPLIST_FILE = Cashier/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -475,10 +475,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Cute/Cute.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Cashier/Cashier.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Cute/Info.plist;
+				INFOPLIST_FILE = Cashier/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -505,7 +505,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.HadeelAlharthi.CuteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cute.app/Contents/MacOS/Cute";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cashier.app/Contents/MacOS/Cashier";
 			};
 			name = Debug;
 		};
@@ -525,7 +525,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.HadeelAlharthi.CuteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cute.app/Contents/MacOS/Cute";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cashier.app/Contents/MacOS/Cashier";
 			};
 			name = Release;
 		};
@@ -570,7 +570,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5F798A5E215EA6C200EA4B37 /* Build configuration list for PBXProject "Cute" */ = {
+		5F798A5E215EA6C200EA4B37 /* Build configuration list for PBXProject "Cashier" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F798A87215EA6C500EA4B37 /* Debug */,
@@ -579,7 +579,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F798A89215EA6C500EA4B37 /* Build configuration list for PBXNativeTarget "Cute" */ = {
+		5F798A89215EA6C500EA4B37 /* Build configuration list for PBXNativeTarget "Cashier" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F798A8A215EA6C500EA4B37 /* Debug */,
@@ -588,7 +588,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F798A8C215EA6C500EA4B37 /* Build configuration list for PBXNativeTarget "CuteTests" */ = {
+		5F798A8C215EA6C500EA4B37 /* Build configuration list for PBXNativeTarget "CashierTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F798A8D215EA6C500EA4B37 /* Debug */,
@@ -597,7 +597,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F798A8F215EA6C500EA4B37 /* Build configuration list for PBXNativeTarget "CuteUITests" */ = {
+		5F798A8F215EA6C500EA4B37 /* Build configuration list for PBXNativeTarget "CashierUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F798A90215EA6C500EA4B37 /* Debug */,

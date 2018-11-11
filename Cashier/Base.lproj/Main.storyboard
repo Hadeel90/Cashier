@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,11 +11,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="Cute" id="1Xt-HY-uBw">
+                            <menuItem title="Cashier" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Cute" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="Cashier" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About Cute" id="5kV-Vb-QxS">
+                                        <menuItem title="About Cashier" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -29,7 +29,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide Cute" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide Cashier" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -47,7 +47,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit Cute" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit Cashier" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -660,7 +660,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="Cute Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="Cashier Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -674,7 +674,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Cute" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Cashier" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -684,7 +684,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Cute" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Cashier" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
@@ -700,10 +700,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--Cute-->
+        <!--Cashier-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController title="Cute" id="XfG-lQ-9wD" customClass="ViewController" customModule="Cute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Cashier" id="XfG-lQ-9wD" customClass="ViewController" customModule="Cashier" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="492" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2101,7 +2101,7 @@ DQ
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn width="112.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="i5D-mq-ceU">
+                                                <tableColumn width="111.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="i5D-mq-ceU">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Price">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -2115,7 +2115,7 @@ DQ
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="D9p-oL-I4r">
-                                                            <rect key="frame" x="564.5" y="1" width="112" height="40"/>
+                                                            <rect key="frame" x="564.5" y="1" width="111" height="40"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </tableCellView>
                                                     </prototypeCellViews>
@@ -2547,7 +2547,7 @@ DQ
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn width="112.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="ELM-FI-7Bm">
+                                                <tableColumn width="111.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="ELM-FI-7Bm">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Price">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -2561,7 +2561,7 @@ DQ
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="SEP-ni-fXJ">
-                                                            <rect key="frame" x="564.5" y="1" width="112" height="63"/>
+                                                            <rect key="frame" x="564.5" y="1" width="111" height="63"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </tableCellView>
                                                     </prototypeCellViews>
@@ -2812,7 +2812,7 @@ DQ
         <!--New Admin-->
         <scene sceneID="nHr-0E-iqh">
             <objects>
-                <viewController title="New Admin" storyboardIdentifier="NewAdmin" id="ViQ-hK-yNX" customClass="NewAdminViewController" customModule="Cute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="New Admin" storyboardIdentifier="NewAdmin" id="ViQ-hK-yNX" customClass="NewAdminViewController" customModule="Cashier" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="DnE-qi-OrE">
                         <rect key="frame" x="0.0" y="0.0" width="283" height="119"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2898,7 +2898,7 @@ DQ
         <!--Reference Numbers-->
         <scene sceneID="p5Y-sE-r8I">
             <objects>
-                <viewController title="Reference Numbers" id="31W-vv-ECR" customClass="ReferenceNumbersViewController" customModule="Cute" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Reference Numbers" id="31W-vv-ECR" customClass="ReferenceNumbersViewController" customModule="Cashier" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="C3Z-Q5-t4v">
                         <rect key="frame" x="0.0" y="0.0" width="606" height="339"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2974,7 +2974,7 @@ DQ
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn width="435.5" minWidth="40" maxWidth="1000" id="o22-vM-ugR">
+                                                <tableColumn width="434.5" minWidth="40" maxWidth="1000" id="o22-vM-ugR">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Description">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -2988,7 +2988,7 @@ DQ
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="2Rh-h5-osi">
-                                                            <rect key="frame" x="126.5" y="1" width="435" height="17"/>
+                                                            <rect key="frame" x="126.5" y="1" width="434" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </tableCellView>
                                                     </prototypeCellViews>

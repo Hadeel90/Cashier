@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Cute.xcodeproj">
+      location = "self:/Users/Hadeel/Development/Mac Apps/Cute/Cute/Cashier.xcodeproj">
    </FileRef>
 </Workspace>
