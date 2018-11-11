@@ -18,6 +18,8 @@ class DetailedNewReceiptViewController: NSViewController, NSTableViewDataSource,
     var currentDate: String!
     var newReceipts: [NewReceipt] = []
     let cellIdentifier: String = "NewReceiptCell"
+    var itemIDs: [String] = []
+    var references: [String : String] = [:]
     
     //methods
     override func viewDidLoad() {
@@ -25,6 +27,29 @@ class DetailedNewReceiptViewController: NSViewController, NSTableViewDataSource,
         // Do view setup here.
         DetailedNewReceiptTable.dataSource = self
         DetailedNewReceiptTable.delegate = self
+        
+        // itemIDs enumerated for unique values in barcode
+        var items: [String] = []
+        for (i, _) in newReceipts.enumerated() {
+            items.append(newReceipts[i].itemID)
+        }
+        itemIDs = CountInstances(list: items)
+        
+        //get references
+        //access data
+        let appDelegate = NSApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Reference")
+        
+        //add data into array
+        do {
+            let results = try context.fetch(request)
+            for item in results as! [NSManagedObject] {
+                references[String(item.value(forKey: "id") as! Int)] = item.value(forKey: "desc") as? String
+            }
+        } catch {
+            print(request.debugDescription)
+        }
     }
     
     override func viewDidAppear() {
@@ -60,9 +85,13 @@ class DetailedNewReceiptViewController: NSViewController, NSTableViewDataSource,
                 let currentdate = Date()
                 let dateFormatter = DateFormatter()
                 dateFormatter.dateFormat = "yyMMdd"
-                view.stringValue = dateFormatter.string(from: currentdate) + newReceipts[row].itemID
+                view.stringValue = dateFormatter.string(from: currentdate) + itemIDs[row]
             case "Description":
-                view.stringValue = newReceipts[row].vendorID
+                if references.keys.contains(where: {$0 == newReceipts[row].itemID}) {
+                    view.stringValue = references[newReceipts[row].itemID]!
+                } else {
+                    view.stringValue = "N/A"
+                }
             case "QTY":
                 view.intValue = Int32(newReceipts[row].quantity)
             case "Unit Cost":
@@ -114,6 +143,31 @@ class DetailedNewReceiptViewController: NSViewController, NSTableViewDataSource,
         }
         
         DetailedNewReceiptTable.reloadData()
+    }
+    
+    /**
+     Counts instances in a string array and appends count to string
+     
+     - Parameter list: String array
+    */
+    func CountInstances(list: [String]) -> [String] {
+        var index: Int = 1
+        var newArr: [String] = []
+        var arr = list.sorted()
+        var next: String = ""
+        for (i, item) in arr.enumerated() {
+            if i < arr.count - 1 {
+                next = arr[i+1]
+            }
+            if next > item {
+                newArr.append(String(item) + String(index))
+                index = 1
+            } else {
+                newArr.append(String(item) + String(index))
+                index += 1
+            }
+        }
+        return newArr
     }
     
     //actions
